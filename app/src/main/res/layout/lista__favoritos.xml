@@ -3,13 +3,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.miguelvzz.apppet.MainActivity">
+    tools:context="com.example.miguelvzz.apppet.Lista_Favoritos">
 
     <include android:id="@+id/barra_herramintas"
         layout="@layout/barra_navegacion"></include>
 
     <android.support.v7.widget.RecyclerView
-        android:id="@+id/rv_mascotas"
+        android:id="@+id/rv_mascotas_favoritas"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:paddingBottom="@dimen/activity_vertical_margin"

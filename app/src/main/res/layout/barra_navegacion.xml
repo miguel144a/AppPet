@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/colorPrimary"
+    android:elevation="@dimen/elevacion_appbar">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:rowCount="1"
+        android:numColumns="4">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textSize="@dimen/tama_titulo"
+            android:textColor="@color/blanco"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:layout_gravity="center"
+            />
+
+        <ImageView
+            android:id="@+id/iv_estrella"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/star_filled_50"
+            android:layout_row="0"
+            android:layout_column="3"/>
+
+    </GridLayout>
+
+</android.support.v7.widget.Toolbar>

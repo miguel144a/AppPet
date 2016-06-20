@@ -1,21 +1,29 @@
 package com.example.miguelvzz.apppet;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.Toolbar;
+import android.view.View;
+import android.widget.ImageView;
 
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
-    ArrayList<Mascota> mascotas;
+    static ArrayList<Mascota> mascotas;
     RecyclerView rv_mascotas;
+    ImageView iv_estrella;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        Toolbar action_bar = (Toolbar) findViewById(R.id.barra_herramintas);
+        setSupportActionBar(action_bar);
 
         iniciarListaMascotas();
 
@@ -26,6 +34,16 @@ public class MainActivity extends AppCompatActivity {
         rv_mascotas.setLayoutManager(llm);
 
         iniciaAdaptador();
+
+        iv_estrella = (ImageView) findViewById(R.id.iv_estrella);
+        iv_estrella.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, Lista_Favoritos.class);
+                startActivity(intent);
+            }
+        });
+
     }
 
     public void iniciarListaMascotas() {

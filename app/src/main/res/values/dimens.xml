@@ -8,4 +8,6 @@
     <dimen name="ancho_celada2">90dp</dimen>
     <dimen name="ancho_celada3">90dp</dimen>
     <dimen name="ancho_celada4">50dp</dimen>
+    <dimen name="elevacion_appbar">4dp</dimen>
+    <dimen name="tama_titulo">20dp</dimen>
 </resources>
