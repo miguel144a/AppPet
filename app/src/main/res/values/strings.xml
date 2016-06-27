@@ -2,4 +2,14 @@
     <string name="app_name">Mascotas</string>
     <string name="nombre_mascota">Perro</string>
     <string name="num_likes">10</string>
+    <string name="mn_contacto">Contacto</string>
+    <string name="mn_acerca">Acerca de</string>
+    <string name="tv_nombre">Ing. Miguel Ángel Vázquez De La Cruz</string>
+    <string name="tv_desarrollador">Desarrollador Java y Android</string>
+    <string name="tv_email">miguel_144a@hotmail.com</string>
+    <string name="tv_nombre_contacto">Nombre</string>
+    <string name="tv_email_contacto">Email</string>
+    <string name="tv_comentario_contacto">Cometario</string>
+    <string name="btn_enviar">Enviar Comentario</string>
+
 </resources>

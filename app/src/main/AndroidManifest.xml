@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.miguelvzz.apppet">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -15,15 +17,20 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Lista_Favoritos"
-            android:parentActivityName=".MainActivity"><!-- Jerarquia de activities-->
-            <!--Soporte para versiones 4.0 o menores-->
+        <activity
+            android:name=".Lista_Favoritos"
+            android:parentActivityName=".MainActivity">
+
+            <!-- Jerarquia de activities -->
+            <!-- Soporte para versiones 4.0 o menores -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity">
-
-            </meta-data>
+                android:value=".MainActivity" />
         </activity>
+        <activity android:name=".activities.ContactoActivity" />
+        <activity android:name=".activities.AcercaActivity" />
+        <activity android:name=".FragmentLista" />
+        <activity android:name=".FragmentDetalle"></activity>
     </application>
 
 </manifest>

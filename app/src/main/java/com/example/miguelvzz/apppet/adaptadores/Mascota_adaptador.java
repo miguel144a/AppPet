@@ -1,4 +1,4 @@
-package com.example.miguelvzz.apppet;
+package com.example.miguelvzz.apppet.adaptadores;
 
 import android.app.Activity;
 import android.support.v7.widget.RecyclerView;
@@ -8,6 +8,9 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.example.miguelvzz.apppet.Mascota;
+import com.example.miguelvzz.apppet.R;
 
 import java.util.ArrayList;
 

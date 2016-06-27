@@ -10,66 +10,47 @@
     card_view:cardCornerRadius="@dimen/corner_radius_cardview">
 
     <LinearLayout
-        android:id="@+id/ll_lista"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:id="@+id/ll_lista1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-
-        >
+        android:orientation="vertical">
 
         <ImageView
-            android:id="@+id/iv_foto_mascota"
+            android:id="@+id/iv_foto_mascota1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:src="@drawable/dog_haski_icon"/>
 
-        <GridLayout
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:rowCount="1"
-            android:numColumns="4">
-
-            <ImageView
-                android:id="@+id/iv_hueso_bla"
-                android:layout_width="@dimen/ancho_celada1"
-                android:layout_height="wrap_content"
-                android:src="@drawable/hueso"
-                android:layout_row="0"
-                android:layout_column="0"/>
+            android:numColumns="2">
 
             <TextView
-                android:id="@+id/tv_nombre"
-                android:layout_width="@dimen/ancho_celada2"
-                android:layout_height="wrap_content"
-                android:text="@string/nombre_mascota"
-                android:textSize="@dimen/texto_size"
-                android:layout_gravity="center"
-                android:layout_row="0"
-                android:layout_column="1"/>
-
-            <TextView
-                android:id="@+id/tv_like"
-                android:layout_width="@dimen/ancho_celada3"
+                android:id="@+id/tv_like1"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/num_likes"
                 android:textSize="@dimen/texto_size"
                 android:layout_gravity="center"
                 android:layout_row="0"
-                android:layout_column="2"
-                android:textAlignment="3"
+                android:layout_column="1"
+
                 />
 
             <ImageView
-                android:id="@+id/iv_hueso_dor"
+                android:id="@+id/iv_hueso_dor1"
                 android:layout_width="@dimen/ancho_celada4"
                 android:layout_height="wrap_content"
                 android:src="@drawable/hueso_dorado"
                 android:layout_row="0"
-                android:layout_column="3"
+                android:layout_column="2"
                 />
 
-        </GridLayout>
+        </LinearLayout>
 
     </LinearLayout>
 

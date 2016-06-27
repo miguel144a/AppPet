@@ -6,8 +6,9 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 
+import com.example.miguelvzz.apppet.adaptadores.Mascota_adaptador;
+
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Collections;
 import java.util.Comparator;
 
@@ -26,7 +27,7 @@ public class Lista_Favoritos extends AppCompatActivity {
         setSupportActionBar(action_bar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        mascotas = MainActivity.mascotas;
+        mascotas = FragmentLista.mascotas;
         //iniciarListaMascotas();
 
         rv_mascotas = (RecyclerView) findViewById(R.id.rv_mascotas_favoritas);

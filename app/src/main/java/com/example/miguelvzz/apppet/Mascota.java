@@ -11,6 +11,13 @@ public class Mascota {
     private int foto_hueso_bla;
     private int foto_hueso_dor;
 
+    public Mascota(String nombre, int like, int foto, int foto_hueso_dor) {
+        this.nombre = nombre;
+        this.like = like;
+        this.foto = foto;
+        this.foto_hueso_dor = foto_hueso_dor;
+    }
+
     public Mascota(String nombre, int like, int foto, int foto_hueso_bla, int foto_hueso_dor) {
         this.nombre = nombre;
         this.like = like;
