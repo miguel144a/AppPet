@@ -12,6 +12,7 @@ import android.view.ViewGroup;
 
 import com.example.miguelvzz.apppet.adaptadores.Mascota_adaptador;
 import com.example.miguelvzz.apppet.adaptadores.Mascota_adaptador1;
+import com.mikhaellopez.circularimageview.CircularImageView;
 
 import java.util.ArrayList;
 
@@ -19,6 +20,7 @@ public class FragmentDetalle extends Fragment {
 
     RecyclerView rv_detalle_mascotas;
     static ArrayList<Mascota> mascotas;
+    private CircularImageView circularImageView;
 
     @Nullable
     @Override
