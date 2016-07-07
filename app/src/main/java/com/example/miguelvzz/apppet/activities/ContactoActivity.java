@@ -8,6 +8,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.example.miguelvzz.apppet.R;
+import com.example.miguelvzz.apppet.mail.EnviarMail;
 import com.example.miguelvzz.apppet.mail.SendMail;
 
 public class ContactoActivity extends AppCompatActivity {
@@ -31,7 +32,13 @@ public class ContactoActivity extends AppCompatActivity {
         btn_envia.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                sendEmail();
+
+                String email = et_email.getText().toString();
+                String message = et_comentario.getText().toString();
+
+                EnviarMail mail = new EnviarMail(email, message);
+                mail.enviar();
+                //sendEmail();
             }
         });
 

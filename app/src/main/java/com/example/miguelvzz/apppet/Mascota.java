@@ -5,12 +5,16 @@ package com.example.miguelvzz.apppet;
  */
 public class Mascota {
 
+    private int id;
     private String nombre;
     private int like;
     private int foto;
     private int foto_hueso_bla;
     private int foto_hueso_dor;
 
+    public Mascota() {
+
+    }
     public Mascota(String nombre, int like, int foto, int foto_hueso_dor) {
         this.nombre = nombre;
         this.like = like;
@@ -24,6 +28,14 @@ public class Mascota {
         this.foto = foto;
         this.foto_hueso_bla = foto_hueso_bla;
         this.foto_hueso_dor = foto_hueso_dor;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public void setFoto_hueso_bla(int foto_hueso_bla) {

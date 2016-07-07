@@ -29,8 +29,8 @@
         </activity>
         <activity android:name=".activities.ContactoActivity" />
         <activity android:name=".activities.AcercaActivity" />
-        <activity android:name=".FragmentLista" />
-        <activity android:name=".FragmentDetalle"></activity>
+        <activity android:name=".fragments.FragmentLista" />
+        <activity android:name=".fragments.FragmentDetalle"></activity>
     </application>
 
 </manifest>

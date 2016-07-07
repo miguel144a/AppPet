@@ -6,8 +6,6 @@ import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -16,8 +14,9 @@ import android.widget.ImageView;
 
 import com.example.miguelvzz.apppet.activities.AcercaActivity;
 import com.example.miguelvzz.apppet.activities.ContactoActivity;
-import com.example.miguelvzz.apppet.adaptadores.Mascota_adaptador;
 import com.example.miguelvzz.apppet.adaptadores.PageAdapter;
+import com.example.miguelvzz.apppet.fragments.FragmentDetalle;
+import com.example.miguelvzz.apppet.fragments.FragmentLista;
 
 import java.util.ArrayList;
 

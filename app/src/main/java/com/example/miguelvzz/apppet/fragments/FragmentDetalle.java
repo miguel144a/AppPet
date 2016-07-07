@@ -1,4 +1,4 @@
-package com.example.miguelvzz.apppet;
+package com.example.miguelvzz.apppet.fragments;
 
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -10,6 +10,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.miguelvzz.apppet.Mascota;
+import com.example.miguelvzz.apppet.R;
 import com.example.miguelvzz.apppet.adaptadores.Mascota_adaptador;
 import com.example.miguelvzz.apppet.adaptadores.Mascota_adaptador1;
 import com.mikhaellopez.circularimageview.CircularImageView;

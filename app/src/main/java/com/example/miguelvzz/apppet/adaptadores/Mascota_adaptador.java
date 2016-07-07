@@ -11,6 +11,7 @@ import android.widget.Toast;
 
 import com.example.miguelvzz.apppet.Mascota;
 import com.example.miguelvzz.apppet.R;
+import com.example.miguelvzz.apppet.db.ConstructorMascotas;
 
 import java.util.ArrayList;
 
@@ -45,8 +46,15 @@ public class Mascota_adaptador extends  RecyclerView.Adapter<Mascota_adaptador.M
             @Override
             public void onClick(View v) {
                 Toast.makeText(activity, "Like a " + mascota.getNombre(), Toast.LENGTH_SHORT).show();
-                mascota.setLike(mascota.getLike() + 1);
-                holder.tv_like.setText(String.valueOf(mascota.getLike()));
+
+                ConstructorMascotas constructorMascotas = new ConstructorMascotas(activity);
+                constructorMascotas.darLikeMascota(mascota);
+
+                holder.tv_like.setText(String.valueOf(constructorMascotas.obtenerLikeMascota(mascota)) + " Likes");
+
+                //mascota.setLike(mascota.getLike() + 1);
+                //holder.tv_like.setText(String.valueOf(mascota.getLike()));
+                Toast.makeText(activity, "Diste Like a " + mascota.getNombre(), Toast.LENGTH_LONG).show();
             }
         });
 

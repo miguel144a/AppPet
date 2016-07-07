@@ -7,6 +7,7 @@ import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 
 import com.example.miguelvzz.apppet.adaptadores.Mascota_adaptador;
+import com.example.miguelvzz.apppet.fragments.FragmentLista;
 
 import java.util.ArrayList;
 import java.util.Collections;
